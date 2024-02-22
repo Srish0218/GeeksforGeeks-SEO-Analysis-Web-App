@@ -40,7 +40,7 @@ def analyze_keywords(text_content):
 
 
 ## Streamlit App
-st.markdown("<h1 style ='text-align:center;'>Simple SEO Analysis Web App</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style ='text-align:center;'>SEO Analysis Web App</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
 url = st.text_input("Enter URL: ")
