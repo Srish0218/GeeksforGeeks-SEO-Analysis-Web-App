@@ -172,10 +172,11 @@ if url:
                      width=800)  # Adjust height and width
         st.plotly_chart(fig)
 
-        st.title("Keyword Ranking and Volume on Google Search Engine")
-        st.info('Working on this', icon="ℹ️")
-
         st.markdown("---")
         st.success(f"Analysis completed in {metadata['analysis_time']:.2f} seconds.")
     else:
         st.warning("No metadata found for the provided URL.")
+
+    # Footer
+    st.markdown("---")
+    st.markdown("Made with :red[❤️] by Srishti Jailty :cherry_blossom:. Powered by Streamlit, BeautifulSoup, Plotly, and NLTK.")
