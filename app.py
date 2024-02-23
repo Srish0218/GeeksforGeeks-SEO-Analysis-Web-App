@@ -186,4 +186,4 @@ if url:
 
     # Footer
     st.markdown("---")
-    st.markdown("Made with :red[❤️] by Srishti Jailty :cherry_blossom:. Powered by Streamlit, BeautifulSoup, Plotly, and NLTK.")
+    st.markdown("<p style ='text-align:center;'>Made with ❤️ by Srishti Jailty 🌸. Powered by Streamlit, BeautifulSoup, Plotly, and NLTK. </p>" , unsafe_allow_html=True)
