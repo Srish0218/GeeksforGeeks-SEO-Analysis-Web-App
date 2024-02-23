@@ -111,17 +111,11 @@ if url:
         st.title("Keyword Density Analysis")
         # Calculate keyword density for each keyword
         keyword_density_data = []
-        exclude_keywords = ["C"]  # Add any keywords you want to exclude
-
         for keyword in keywords_list:
-            if keyword.lower() not in exclude_keywords:
-                keyword_count = metadata['text_content'].lower().count(keyword.lower())
-                keyword_density = (keyword_count / total_words) * 100
-                if keyword_density != 0:  # Exclude keywords with density exactly 0
-                    keyword_density_data.append({"Keyword": keyword, "Density": keyword_density})
-
-        # Create a Pandas DataFrame for Keyword Density
-        keyword_density_df = pd.DataFrame(keyword_density_data)
+            keyword_count = metadata['text_content'].lower().count(keyword.lower())
+            keyword_density = (keyword_count / total_words) * 100
+            if keyword_density != 0:  # Exclude keywords with density exactly 0
+                keyword_density_data.append({"Keyword": keyword, "Density": keyword_density})
 
         # Create a Pandas DataFrame for Keyword Density
         keyword_density_df = pd.DataFrame(keyword_density_data)
