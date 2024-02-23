@@ -82,7 +82,7 @@ if url:
     if is_geeksforgeeks_url(url):
         if metadata:
             with st.spinner('Wait for it...'):
-                time.sleep(0.5)
+                time.sleep(0.8)
             st.success('Analysing!')
             st.title("Metadata Analysis")
 
