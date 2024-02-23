@@ -12,6 +12,13 @@ from nltk.corpus import stopwords
 
 nltk.download('stopwords')
 
+st.set_page_config(
+    page_title="GeeksforGeeks SEO Analysis Web App",
+    page_icon=":cherry_blossom:",  # You can use emojis or a URL to an image as the icon
+    layout="wide",  # "wide" or "centered"
+    initial_sidebar_state="expanded"  # "auto", "expanded", "collapsed"
+)
+
 # Function to get metadata
 def get_metadata(url):
     try:
