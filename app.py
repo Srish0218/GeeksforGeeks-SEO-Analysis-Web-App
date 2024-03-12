@@ -20,6 +20,32 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Define your meta description here
+meta_description = "Analyze the SEO of GeeksforGeeks articles with this web app."
+
+# Inject HTML for meta description
+st.markdown(
+    f"""
+    <meta name="description" content="{meta_description}">
+    """,
+    unsafe_allow_html=True
+)
+
+# Define social media meta tags
+social_meta_tags = f"""
+    <meta property="og:title" content="GeeksforGeeks SEO Analysis Web App">
+    <meta property="og:description" content="{meta_description}">
+    <meta property="og:url" content="https://srish-geeksforgeeks-seo-analysis.streamlit.app/">
+"""
+
+# Inject HTML for social media meta tags
+st.markdown(
+    f"""
+    {social_meta_tags}
+    """,
+    unsafe_allow_html=True
+)
+
 # Function to validate GeeksforGeeks URL
 def is_geeksforgeeks_url(url):
     parsed_url = urlparse(url)
